@@ -6,6 +6,20 @@
         <element id="directory" name="classes">
           <element id="module-output" name="dubboConSumer01" />
         </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="dubboProvider01-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="dubboProvider01" />
+          </element>
+          <element id="library" level="project" name="Maven: com.alibaba:dubbo:2.6.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.10.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.10.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.10.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.10.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.10.RELEASE" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.20.0-GA" />
+          <element id="library" level="project" name="Maven: org.jboss.netty:netty:3.2.5.Final" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/dubboConSumer01/target/dubboConSumer01/META-INF/MANIFEST.MF" />

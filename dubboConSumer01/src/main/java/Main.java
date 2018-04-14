@@ -1,14 +1,16 @@
+import com.htt.dubbo.HelloDubboService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+
 /**
- * Created with IntelliJ IDEA.
- * Author: 19644
- * Date: 2018-04-15 015
- * Time: 02:29:02
- * Description:
+ * The type Main.
  */
 public class Main
 {
+
+    /**
+     * @param args
+     */
     public static void main(String[] args)
     {
         ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext
