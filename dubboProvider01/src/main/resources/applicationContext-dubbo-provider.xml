@@ -11,7 +11,7 @@
     <dubbo:application name="dubbo-provider01"/>
 
 
-    <dubbo:registry address="multicast://224.3.4.5:1234"/>
+    <dubbo:registry address="zookeeper://35.189.178.24:2181"/>
     <bean id="helloDubbo" class="com.htt.dubbo.impl.HelloDubboServiceImpl"/>
 
     <!--<dubbo:service interface="com.htt.dubbo.HelloDubboService" ref="helloDubbo" registry="N/A"/>-->
