@@ -9,5 +9,7 @@
         ">
     
     <dubbo:application name="dubbo-consumer01"/>
-    <dubbo:reference interface="com.htt.dubbo.HelloDubboService" id="helloDubbo" url="dubbo://localhost:20880"/>
+    <dubbo:registry address="multicast://224.3.4.5:1234"/>
+    <!--<dubbo:reference interface="com.htt.dubbo.HelloDubboService" id="helloDubbo" url="dubbo://localhost:20880"/>-->
+    <dubbo:reference interface="com.htt.dubbo.HelloDubboService" id="helloDubbo" />
 </beans>

@@ -10,8 +10,11 @@
 
     <dubbo:application name="dubbo-provider01"/>
 
+
+    <dubbo:registry address="multicast://224.3.4.5:1234"/>
     <bean id="helloDubbo" class="com.htt.dubbo.impl.HelloDubboServiceImpl"/>
 
-    <dubbo:service interface="com.htt.dubbo.HelloDubboService" ref="helloDubbo" registry="N/A"/>
+    <!--<dubbo:service interface="com.htt.dubbo.HelloDubboService" ref="helloDubbo" registry="N/A"/>-->
+    <dubbo:service interface="com.htt.dubbo.HelloDubboService" ref="helloDubbo"/>
 
 </beans>
