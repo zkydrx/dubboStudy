@@ -23,9 +23,18 @@
     <!--&lt;!&ndash; redis注册中心配置写法二 &ndash;&gt;-->
     <!--<dubbo:registry protocol="redis" address="192.168.31.130:6379"/>-->
 
-    <!--<dubbo:reference interface="com.htt.dubbo.service.HelloDubboService" id="helloDubbo" url="dubbo://localhost:20880"/>-->
+    <!--<dubbo:reference interface="com.htt.dubbo.service.HelloDubboService" id="helloDubbo" url="dubbo://localhost:20880"
+    />-->
+    <!-- dubbo 多版本 -->
     <dubbo:reference interface="com.htt.dubbo.service.HelloDubboService" id="helloDubboService" version="1.0.0" />
     <dubbo:reference interface="com.htt.dubbo.service.HelloDubboService" id="helloDubboService1" version="2.0.0"/>
     <dubbo:reference interface="com.htt.dubbo.service.HelloDubboService" id="helloDubbo" version="*"/>
+
+
+    <!-- dubbo 服务分组 -->
+    <dubbo:reference interface="com.htt.dubbo.service.HelloDubboService" id="dubboGroup1" group="linux"/>
+    <dubbo:reference interface="com.htt.dubbo.service.HelloDubboService" id="dubboGroup2" group="git"/>
+    <dubbo:reference interface="com.htt.dubbo.service.HelloDubboService" id="dubboRandom" group="*"/>
+
 
 </beans>

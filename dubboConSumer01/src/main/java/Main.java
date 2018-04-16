@@ -34,5 +34,27 @@ public class Main
         String linux2 = helloDubbo2.sayHello("dubbo");
 
         System.out.println(linux2);
+
+
+        HelloDubboService dubboGroup1 = (HelloDubboService) classPathXmlApplicationContext.getBean("dubboGroup1");
+        HelloDubboService dubboGroup2 = (HelloDubboService) classPathXmlApplicationContext.getBean("dubboGroup2");
+        HelloDubboService dubboGroupRandom = (HelloDubboService) classPathXmlApplicationContext.getBean
+                ("dubboRandom");
+
+        String dubboGroup11 = dubboGroup1.sayHello("dubboGroup1");
+
+        System.out.println(dubboGroup11);
+
+        String dubboGroup21 = dubboGroup2.sayHello("dubboGroup2");
+
+        System.out.println(dubboGroup21);
+        String dubboRandom = dubboGroupRandom.sayHello("dubboRandom");
+
+        while (dubboRandom.equals("Hello,dubboRandom version2.0.0"))
+        {
+            dubboRandom = dubboGroupRandom.sayHello("dubboRandom");
+        }
+        System.out.println(dubboRandom);
+
     }
 }

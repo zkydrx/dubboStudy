@@ -24,7 +24,12 @@
 
 
     <!--<dubbo:service interface="com.htt.dubbo.service.HelloDubboService" ref="helloDubbo" registry="N/A"/>-->
+    <!-- 多版本控制 -->
     <dubbo:service interface="com.htt.dubbo.service.HelloDubboService" ref="helloDubboService" version="1.0.0"/>
     <dubbo:service interface="com.htt.dubbo.service.HelloDubboService" ref="helloDubboService1" version="2.0.0"/>
+
+    <!-- 服务分组 -->
+    <dubbo:service interface="com.htt.dubbo.service.HelloDubboService" ref="helloDubboService" group ="linux"/>
+    <dubbo:service interface="com.htt.dubbo.service.HelloDubboService" ref="helloDubboService1" group="git"/>
 
 </beans>
