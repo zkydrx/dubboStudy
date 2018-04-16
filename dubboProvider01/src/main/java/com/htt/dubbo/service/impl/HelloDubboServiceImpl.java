@@ -1,6 +1,7 @@
-package com.htt.dubbo.impl;
+package com.htt.dubbo.service.impl;
 
-import com.htt.dubbo.HelloDubboService;
+import com.htt.dubbo.service.HelloDubboService;
+import org.springframework.stereotype.Service;
 
 /**
  * Created with IntelliJ IDEA.
@@ -9,12 +10,13 @@ import com.htt.dubbo.HelloDubboService;
  * Time: 01:00:21
  * Description:
  */
+@Service("helloDubboService")
 public class HelloDubboServiceImpl implements HelloDubboService
 {
 
     @Override
     public String sayHello(String name)
     {
-        return "Hello,"+name;
+        return "Hello,"+name+" version1.0.0";
     }
 }

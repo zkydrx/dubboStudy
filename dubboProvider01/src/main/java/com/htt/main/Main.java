@@ -18,6 +18,10 @@ public class Main
         ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext
                 ("classpath:applicationConetxt.xml");
         classPathXmlApplicationContext.start();
+        System.out.println("provider started.");
         System.in.read();
+
+        classPathXmlApplicationContext.destroy();
+        classPathXmlApplicationContext.close();
     }
 }
