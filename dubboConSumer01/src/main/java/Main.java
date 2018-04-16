@@ -16,7 +16,7 @@ public class Main
         ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext
                 ("classpath:applicationContext.xml");
         HelloDubboService helloDubbo = (HelloDubboService) classPathXmlApplicationContext.getBean("helloDubbo");
-        String linux = helloDubbo.sayHello("linux");
+        String linux = helloDubbo.sayHello("linux is my favorite OS.");
 
         System.out.println(linux);
     }

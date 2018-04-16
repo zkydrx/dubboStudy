@@ -9,7 +9,15 @@
         ">
     
     <dubbo:application name="dubbo-consumer01"/>
-    <dubbo:registry address="zookeeper://35.189.178.24:2181"/>
+
+
+    <!--&lt;!&ndash; zookeeper注册中心配置写法一 &ndash;&gt;-->
+    <!--<dubbo:registry address="zookeeper://35.189.178.24:2181"/>-->
+
+    <!-- zookeeper注册中心配置写法二 -->
+    <dubbo:registry protocol="zookeeper" address="35.189.178.24:2181"/>
+
+
     <!--<dubbo:reference interface="com.htt.dubbo.HelloDubboService" id="helloDubbo" url="dubbo://localhost:20880"/>-->
     <dubbo:reference interface="com.htt.dubbo.HelloDubboService" id="helloDubbo" />
 </beans>
