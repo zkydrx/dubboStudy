@@ -2,12 +2,12 @@ package com.htt.dubbo.service;
 
 /**
  * Created with IntelliJ IDEA.
- * Author: zky
- * Date: 2018-04-16
- * Time: 23:44:55
- * Description: 描述该类的职责。
+ * Author: 19644
+ * Date: 2018-04-15 015
+ * Time: 00:59:24
+ * Description:
  */
 public interface HelloDubboService
 {
-    String sayHello(String name);
+    public String sayHello(String name);
 }
