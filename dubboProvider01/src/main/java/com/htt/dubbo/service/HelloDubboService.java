@@ -9,5 +9,5 @@ package com.htt.dubbo.service;
  */
 public interface HelloDubboService
 {
-    public String sayHello(String name);
+   String sayHello(String name);
 }
