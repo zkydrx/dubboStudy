@@ -29,7 +29,9 @@
     <dubbo:service interface="com.htt.dubbo.service.HelloDubboService" ref="helloDubboService1" version="2.0.0"/>
 
     <!-- 服务分组 -->
-    <dubbo:service interface="com.htt.dubbo.service.HelloDubboService" ref="helloDubboService" group ="linux"/>
-    <dubbo:service interface="com.htt.dubbo.service.HelloDubboService" ref="helloDubboService1" group="git"/>
+    <dubbo:service interface="com.htt.dubbo.service.HelloDubboService" ref="helloDubboService" group ="linux"
+                   token="true"/>
+    <dubbo:service interface="com.htt.dubbo.service.HelloDubboService" ref="helloDubboService1" group="git"
+                   token="123456Linux"/>
 
 </beans>

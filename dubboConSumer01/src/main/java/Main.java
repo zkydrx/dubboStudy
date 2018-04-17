@@ -50,10 +50,7 @@ public class Main
         System.out.println(dubboGroup21);
         String dubboRandom = dubboGroupRandom.sayHello("dubboRandom");
 
-        while (dubboRandom.equals("Hello,dubboRandom version2.0.0"))
-        {
-            dubboRandom = dubboGroupRandom.sayHello("dubboRandom");
-        }
+
         System.out.println(dubboRandom);
 
     }
