@@ -18,7 +18,9 @@
     <!--<dubbo:registry protocol="zookeeper" address="35.189.178.24:2181"/>-->
 
     <!-- zookeeper 集群 -->
-    <dubbo:registry protocol="zookeeper" address="35.189.178.24:2181,35.189.178.24:2182,35.189.178.24:2183"/>
+    <dubbo:registry protocol="zookeeper"
+                    address="35.189.178.24:2181,35.189.178.24:2182,35.189.178.24:2183,
+                    13.112.27.100:2181,13.112.27.100:2182,13.112.27.100:2183"/>
 
     <!--&lt;!&ndash; redis注册中心配置写法一 &ndash;&gt;-->
     <!--<dubbo:registry address="redis://192.168.31.130:6379"/>-->
